@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css_s.css">
+    <title>LU Solver</title>
+
+</head>
+
+<body>
+<header>Решение СЛАУ с помощью LU-разложения</header>
+
+
+<div id="div1" class="main_block">
+
+
+Задайте размер квадратной матрицы n = :
+    <input id="input_n" class="quantity-num" type="number" value="2" min="1" max="100" />
+    <button class="butt_enter" id="enter"> Enter</button>
+    <br>
+
+    <label for="rand"> Заполнить случайными числами?</label>
+    <input type="checkbox" id="rand"  value="1">
+
+    <br>
+
+
+    <div id ="text1"> </div>
+
+</div>
+
+<div id ="text2"> </div>
+
+
+<br>
+
+<div >
+    <button type="button" id="reset_input" class="butt_reset" >Сброс ввода</button>
+
+    <br>
+
+    <button type="button" id="LU" class="calc"> Получить LU разложение и решение СЛАУ </button>
+
+    <br>
+    <br>
+
+    Введите количество знаков после запятой в решении:
+
+    <input id="input_e" class="quantity-num" type="number" value="1" min = "1" max="10"/>
+
+</div>
+
+<div id="results1"> </div>
+<div id="clear_butt2">
+    <button type="button" id="reset_output" class="butt_reset" >Очистить решение</button>
+</div>
+
+
+<script src="LU.js">
+</script>
+</body>
+
+</html>
